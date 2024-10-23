@@ -1,4 +1,7 @@
 {
+  "/(homes)/home_3/page": "app/(homes)/home_3/page.js",
+  "/(hotel)/hotel-single-v1/[id]/page": "app/(hotel)/hotel-single-v1/[id]/page.js",
+  "/(others)/contact/page": "app/(others)/contact/page.js",
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(others)/login/page": "app/(others)/login/page.js"
 }

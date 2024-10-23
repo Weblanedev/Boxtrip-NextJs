@@ -15,6 +15,32 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+    ],
+    "/(others)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(others)/contact/page.js"
+    ],
+    "/(homes)/home_2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(homes)/home_2/page.js"
+    ],
+    "/(homes)/home_3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(homes)/home_3/page.js"
+    ],
+    "/(hotel)/hotel-single-v1/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(hotel)/hotel-single-v1/[id]/page.css",
+      "static/chunks/app/(hotel)/hotel-single-v1/[id]/page.js"
+    ],
+    "/(others)/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(others)/login/page.js"
     ]
   }
 }

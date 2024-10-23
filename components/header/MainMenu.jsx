@@ -18,7 +18,7 @@ import { useState } from "react";
 
 const MainMenu = ({ style = "" }) => {
   const pathname = usePathname();
-  const [isActiveParent, setIsActiveParent] = useState(false)
+  const [isActiveParent, setIsActiveParent] = useState(false);
 
   return (
     <nav className="menu js-navList">
@@ -28,7 +28,7 @@ const MainMenu = ({ style = "" }) => {
             isActiveParentChaild(homeItems, pathname) ? "current" : ""
           } menu-item-has-children`}
         >
-          <a href="#">
+          <a href="/">
             <span className="mr-10">Home</span>
             <i className="icon icon-chevron-sm-down" />
           </a>
@@ -47,7 +47,13 @@ const MainMenu = ({ style = "" }) => {
         </li>
         {/* End home page menu */}
 
-        <li className={isActiveParent ? "menu-item-has-children -has-mega-menu current":'menu-item-has-children -has-mega-menu'}>
+        <li
+          className={
+            isActiveParent
+              ? "menu-item-has-children -has-mega-menu current"
+              : "menu-item-has-children -has-mega-menu"
+          }
+        >
           <a href="#">
             <span className="mr-10">Categories</span>
             <i className="icon icon-chevron-sm-down" />
@@ -57,7 +63,7 @@ const MainMenu = ({ style = "" }) => {
           </div>
         </li>
         {/* End categories menu items */}
-
+        
         <li className={pathname === "/destinations" ? "current" : ""}>
           <Link href="/destinations">Destinations</Link>
         </li>
@@ -113,13 +119,15 @@ const MainMenu = ({ style = "" }) => {
 
         <li
           className={`${
-            pathname.split('/')[1] == 'dashboard'  || pathname.split('/')[1] == 'vendor-dashboard' ? "current" : ""
+            pathname.split("/")[1] == "dashboard" ||
+            pathname.split("/")[1] == "vendor-dashboard"
+              ? "current"
+              : ""
           } menu-item-has-children`}
         >
           <a href="#">
             <span className="mr-10">Dashboard</span>
             <i className="icon icon-chevron-sm-down" />
-          
           </a>
           <ul className="subnav ">
             {dashboardItems.map((menu, i) => (
