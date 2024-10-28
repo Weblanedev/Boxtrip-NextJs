@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
-import Header5 from "@/components/header/header-5";
+import Header1 from "@/components/header/header-1";
 import Hero5 from "@/components/hero/hero-5";
+import Hero1 from "@/components/hero/hero-1";
 import Link from "next/link";
 import Footer4 from "@/components/footer/footer-4";
 import Tours2 from "@/components/tours/Tours2";
@@ -25,10 +26,11 @@ const home_5 = () => {
     <>
       {/* End Page Title */}
 
-      <Header5 />
+      <Header1 />
       {/* End Header 5 */}
 
       <Hero5 />
+      {/* <Hero1 /> */}
       {/* End Hero 5 */}
 
       <section className="layout-pt-lg layout-pb-md">
@@ -36,22 +38,22 @@ const home_5 = () => {
           <div className="row y-gap-20 justify-between items-end">
             <div className="col-auto">
               <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Most Popular Tours</h2>
+                <h2 className="sectionTitle__title">Affordable Tours</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Cheap travel bookings for you
                 </p>
               </div>
             </div>
             {/* End .col */}
 
-            <div className="col-auto">
+            {/* <div className="col-auto">
               <Link
                 href="#"
                 className="button -md -blue-1 bg-blue-1-05 text-blue-1"
               >
                 More <div className="icon-arrow-top-right ml-15" />
               </Link>
-            </div>
+            </div> */}
             {/* End .col */}
           </div>
           {/* End .row */}

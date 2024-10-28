@@ -1,4 +1,4 @@
-import MainFilterSearchBox from "./MainFilterSearchBox";
+// import MainFilterSearchBox from "./MainFilterSearchBox";
 
 const Index = () => {
   return (
@@ -25,13 +25,13 @@ const Index = () => {
               </span>
             </h1>
             <p className="mt-20" data-aos="fade-up" data-aos-delay="500">
-              Experience the various exciting tour and travel packages and Make
-              hotel reservations, find
-              <br className="lg:d-none" /> vacation packages, search cheap
-              hotels and events
+              Let us take you to the Best Destinations in the world at the
+              cheapest rate.
+              <br className="lg:d-none" />
+              You can rely on our professional guide for the best tour ever.
             </p>
 
-            <MainFilterSearchBox />
+            {/* <MainFilterSearchBox /> */}
             {/* End filter content */}
           </div>
         </div>
